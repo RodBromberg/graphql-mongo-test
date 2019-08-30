@@ -93,9 +93,9 @@ mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/your-app-name"
 );
 
-// mongoose.connect(
-//   "mongodb+srv://rodbromberg:qSa3ZuYrSHoq39jS@graphql-rxba8.mongodb.net/test?retryWrites=true&w=majority"
-// );
+mongoose.connect(
+  "mongodb+srv://rodbromberg:qSa3ZuYrSHoq39jS@graphql-rxba8.mongodb.net/test?retryWrites=true&w=majority"
+);
 //   .then(() => {
 //     app.listen(4000);
 //   })
@@ -108,6 +108,6 @@ mongoose.connection.once("open", () => {
 
 const port = process.env.PORT || 4000;
 
-app.listen(port, () => {
+app.listen(4000, () => {
   console.log("${port} is up");
 });

@@ -11,11 +11,23 @@ const getEventsQuery = gql`
     }
   }
 `;
-
 class Events extends Component {
+  //   displayEvents() {
+  //     var data = this.props.data;
+  //     if (data.loading) {
+  //       return <div>Loading Eventss...</div>;
+  //     } else {
+  //       return data.events.map(a => {
+  //         return <li key={Math.random()}>{a.title}</li>;
+  //       });
+  //     }
+  //   }
+
   render() {
-    console.log(this.props);
-    return <div>hi</div>;
+    // return <ul>{this.displayEvents()}</ul>;
+    <div>{console.log(this.props)}</div>;
   }
 }
 export default graphql(getEventsQuery)(Events);
+
+//dsadas

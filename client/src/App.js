@@ -4,7 +4,7 @@ import { ApolloProvider } from "react-apollo";
 import Events from "./componentes/Events";
 
 const client = new ApolloClient({
-  uri: "http://localhost:4000/graphql"
+  uri: "https://unique-project-namess.herokuapp.com/"
 });
 
 class App extends Component {
