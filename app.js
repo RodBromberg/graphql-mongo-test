@@ -15,6 +15,10 @@ app.use(express.json());
 
 // ! in ID makes it not nullable
 
+app.use("/home", (req, res) => {
+  res.json("ho");
+});
+
 app.use(
   "/graphql",
   graphqlHttp({
